@@ -1,0 +1,485 @@
+Tue, 07 May 2019 14:17:01 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:17:01 log.py[line:20] ERROR (1054, "Unknown column 'from_no_in' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'from_no_in' in 'field list'")
+Tue, 07 May 2019 14:17:01 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:17:01 log.py[line:20] ERROR (1054, "Unknown column 'from_no_in' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'from_no_in' in 'field list'")
+Tue, 07 May 2019 14:17:01 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊输液药物输液总量
+Tue, 07 May 2019 14:17:01 log.py[line:17] DEBUG 读取配置项发生了错误,zone,门诊输液药物输液总量
+Tue, 07 May 2019 14:17:01 log.py[line:20] ERROR No option '\xe9\x97\xa8\xe8\xaf\x8a\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe9\x97\xa8\xe8\xaf\x8a\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Tue, 07 May 2019 14:17:01 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:17:01 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Tue, 07 May 2019 14:17:01 log.py[line:17] DEBUG 该指标在指标库中不存在,住院输液药物输液总量
+Tue, 07 May 2019 14:17:01 log.py[line:17] DEBUG 读取配置项发生了错误,zone,住院输液药物输液总量
+Tue, 07 May 2019 14:17:01 log.py[line:20] ERROR No option '\xe4\xbd\x8f\xe9\x99\xa2\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe4\xbd\x8f\xe9\x99\xa2\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Tue, 07 May 2019 14:17:01 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:17:01 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Tue, 07 May 2019 14:17:06 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:17:06 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:17:09 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:17:09 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:17:09 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E9%80%81%E6%A3%80%E6%A0%87%E8%AF%86 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:17:25 log.py[line:17] DEBUG 指标计算时出错
+Tue, 07 May 2019 14:17:25 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 95, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:17:25 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:17:26 log.py[line:17] DEBUG 指标计算时出错
+Tue, 07 May 2019 14:17:26 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 95, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:17:26 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:28:59 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:29:00 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:29:00 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:29:00 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:29:00 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:29:00 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:29:00 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:29:00 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:29:00 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:29:00 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:29:04 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:29:05 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:29:13 log.py[line:17] DEBUG 指标计算时出错
+Tue, 07 May 2019 14:29:13 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 95, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:29:13 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:33:06 log.py[line:17] DEBUG 指标计算时出错
+Tue, 07 May 2019 14:33:06 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 95, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:33:06 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:33:07 log.py[line:17] DEBUG 指标计算时出错
+Tue, 07 May 2019 14:33:07 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 95, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:33:07 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:33:32 log.py[line:17] DEBUG 指标计算时出错
+Tue, 07 May 2019 14:33:32 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 95, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:33:32 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:33:38 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:33:38 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Tue, 07 May 2019 14:33:38 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:33:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:33:44 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:33:44 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E9%80%81%E6%A3%80%E6%A0%87%E8%AF%86 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:33:44 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:34:05 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:34:05 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Tue, 07 May 2019 14:34:14 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:14 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:14 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:14 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:34:14 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:34:19 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:34:19 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Tue, 07 May 2019 14:34:19 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:19 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:19 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:19 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:34:19 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:34:24 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:34:24 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Tue, 07 May 2019 14:34:24 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:24 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:24 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:24 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:34:24 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:34:44 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:34:44 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:45 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:34:45 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:45 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:34:45 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 209, in getCalc_Numerator_zone
+    self.itemvalue_one = self.getValueInddds(self.itemnameOne, zoneid, startT, endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:45 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:34:45 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 242, in getCalc_denominator_zone
+    self.itemvalue_two = self.getValueInddds(self.itemnameOne, zoneid, startT, endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:34:45 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:34:45 log.py[line:17] DEBUG 该指标在指标库中不存在,出院患者I类切口手术例次
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E5%8E%9F%E5%88%99%E4%B8%8A%E4%B8%8D%E9%9C%80%E9%A2%84%E9%98%B2%E4%BD%BF%E7%94%A8%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E7%9A%84I%E7%B1%BB%E5%88%87%E5%8F%A3%E6%89%8B%E6%9C%AF HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:45 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E5%8E%9F%E5%88%99%E4%B8%8A%E4%B8%8D%E9%9C%80%E9%A2%84%E9%98%B2%E4%BD%BF%E7%94%A8%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E7%9A%84I%E7%B1%BB%E5%88%87%E5%8F%A3%E6%89%8B%E6%9C%AF HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=I%E7%B1%BB%E5%88%87%E5%8F%A3%E6%89%8B%E6%9C%AF%E9%A2%84%E9%98%B2%E4%BD%BF%E7%94%A8%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E5%90%88%E7%90%86%E5%88%86%E7%B1%BB HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E5%8E%9F%E5%88%99%E4%B8%8A%E4%B8%8D%E9%9C%80%E9%A2%84%E9%98%B2%E4%BD%BF%E7%94%A8%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E7%9A%84I%E7%B1%BB%E5%88%87%E5%8F%A3%E6%89%8B%E6%9C%AF HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E5%8E%9F%E5%88%99%E4%B8%8A%E4%B8%8D%E9%9C%80%E9%A2%84%E9%98%B2%E4%BD%BF%E7%94%A8%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E7%9A%84I%E7%B1%BB%E5%88%87%E5%8F%A3%E6%89%8B%E6%9C%AF HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=I%E7%B1%BB%E5%88%87%E5%8F%A3%E6%89%8B%E6%9C%AF%E9%A2%84%E9%98%B2%E4%BD%BF%E7%94%A8%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E5%90%88%E7%90%86%E5%88%86%E7%B1%BB HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:34:46 log.py[line:17] DEBUG 该指标在指标库中不存在,I类切口手术前0.5-1.0小时内给药例次
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:34:46 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:46 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:34:46 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:34:58 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:34:58 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:58 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:34:58 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:34:58 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:35:03 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:35:03 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Tue, 07 May 2019 14:35:03 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:35:03 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:35:03 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:35:03 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:35:03 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:35:03 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:35:03 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:35:03 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:35:03 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:35:03 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 209, in getCalc_Numerator_zone
+    self.itemvalue_one = self.getValueInddds(self.itemnameOne, zoneid, startT, endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:35:03 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:35:03 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:35:03 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:35:03 log.py[line:17] DEBUG 配置项错误
+Tue, 07 May 2019 14:35:03 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 242, in getCalc_denominator_zone
+    self.itemvalue_two = self.getValueInddds(self.itemnameOne, zoneid, startT, endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Tue, 07 May 2019 14:35:03 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 07 May 2019 14:39:29 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:39:29 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:39:29 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E9%80%81%E6%A3%80%E6%A0%87%E8%AF%86 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:39:29 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Tue, 07 May 2019 14:39:29 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Tue, 07 May 2019 14:39:30 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E9%80%81%E6%A3%80%E6%A0%87%E8%AF%86 HTTP/1.1" 200 None
+Tue, 07 May 2019 14:41:18 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:41:18 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:41:19 log.py[line:17] DEBUG 指标计算时出错
+Tue, 07 May 2019 14:41:19 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 95, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:41:19 log.py[line:17] DEBUG 执行过程中出错
+Tue, 07 May 2019 14:41:19 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:41:20 log.py[line:17] DEBUG 指标计算时出错
+Tue, 07 May 2019 14:41:20 log.py[line:20] ERROR (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 95, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'Herb_Packet_Count' in 'field list'")
+Tue, 07 May 2019 14:41:20 log.py[line:17] DEBUG 该指标在指标库中不存在,self2
+Tue, 07 May 2019 14:41:20 log.py[line:17] DEBUG 该指标在指标库中不存在,self1

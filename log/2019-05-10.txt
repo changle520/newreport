@@ -1,0 +1,1731 @@
+Fri, 10 May 2019 10:42:31 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊输液药物输液总量
+Fri, 10 May 2019 10:42:31 log.py[line:17] DEBUG 读取配置项发生了错误,zone,门诊输液药物输液总量
+Fri, 10 May 2019 10:42:31 log.py[line:20] ERROR No option '\xe9\x97\xa8\xe8\xaf\x8a\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe9\x97\xa8\xe8\xaf\x8a\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Fri, 10 May 2019 10:42:31 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 10:42:31 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Fri, 10 May 2019 10:42:31 log.py[line:17] DEBUG 该指标在指标库中不存在,住院输液药物输液总量
+Fri, 10 May 2019 10:42:31 log.py[line:17] DEBUG 该指标在指标库中不存在,住院平均床日输液量
+Fri, 10 May 2019 11:49:53 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 11:49:53 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Fri, 10 May 2019 11:49:53 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Fri, 10 May 2019 11:49:53 log.py[line:17] DEBUG 配置项错误
+Fri, 10 May 2019 11:49:53 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Fri, 10 May 2019 11:49:53 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 11:49:53 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Fri, 10 May 2019 11:49:53 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Fri, 10 May 2019 11:49:53 log.py[line:17] DEBUG 配置项错误
+Fri, 10 May 2019 11:49:53 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Fri, 10 May 2019 11:49:53 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 11:49:54 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Fri, 10 May 2019 11:49:54 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Fri, 10 May 2019 11:49:54 log.py[line:17] DEBUG 配置项错误
+Fri, 10 May 2019 11:49:54 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Fri, 10 May 2019 11:49:54 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 11:49:54 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Fri, 10 May 2019 11:49:54 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 200 None
+Fri, 10 May 2019 11:49:54 log.py[line:17] DEBUG 配置项错误
+Fri, 10 May 2019 11:49:54 log.py[line:20] ERROR getZoneSQLvalue instance has no attribute 'sqlValue'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 63, in getValueInddds
+    return self.sqlValue
+AttributeError: getZoneSQLvalue instance has no attribute 'sqlValue'
+Fri, 10 May 2019 11:50:14 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Fri, 10 May 2019 11:50:16 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Fri, 10 May 2019 13:30:37 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:38 log.py[line:20] ERROR (2013, 'Lost connection to MySQL server during query')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2013, 'Lost connection to MySQL server during query')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_two = self.getCalc_denominator_zone(self.itemnameTwo, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 249, in getCalc_denominator_zone
+    self.itemvalue_two = self.conndb.executeSQL_zoneid_one(self.cur, self.itemTwoSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_two = self.getCalc_denominator_zone(self.itemnameTwo, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 249, in getCalc_denominator_zone
+    self.itemvalue_two = self.conndb.executeSQL_zoneid_one(self.cur, self.itemTwoSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_two = self.getCalc_denominator_zone(self.itemnameTwo, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 249, in getCalc_denominator_zone
+    self.itemvalue_two = self.conndb.executeSQL_zoneid_one(self.cur, self.itemTwoSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A0828>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 197, in getCalc_Numerator_zone
+    configValue = self.configValue.getvalue(self.itemnameOne)
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A0828>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:39 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A0630>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A0630>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Fri, 10 May 2019 13:30:39 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000040490B8>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000040490B8>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Fri, 10 May 2019 13:30:39 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000474DBE0>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000474DBE0>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Fri, 10 May 2019 13:30:39 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:39 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000046CE780>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000046CE780>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000474DF98>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 209, in getCalc_Numerator_zone
+    self.itemvalue_one = self.getValueInddds(self.itemnameOne, zoneid, startT, endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000474DF98>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A06D8>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 242, in getCalc_denominator_zone
+    self.itemvalue_two = self.getValueInddds(self.itemnameOne, zoneid, startT, endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A06D8>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 该指标在指标库中不存在,出院患者I类切口手术例次
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A0898>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 338, in getSqlValue_zone
+    configValue = self.configValue.getvalue(itemname)
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A0898>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000046CE6D8>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 338, in getSqlValue_zone
+    configValue = self.configValue.getvalue(itemname)
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000046CE6D8>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000474D908>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 338, in getSqlValue_zone
+    configValue = self.configValue.getvalue(itemname)
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000474D908>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000474DDA0>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 197, in getCalc_Numerator_zone
+    configValue = self.configValue.getvalue(self.itemnameOne)
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000474DDA0>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004049128>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 197, in getCalc_Numerator_zone
+    configValue = self.configValue.getvalue(self.itemnameOne)
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000000004049128>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 该指标在指标库中不存在,I类切口手术前0.5-1.0小时内给药例次
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A07B8>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A07B8>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A06A0>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A06A0>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A0518>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A0518>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR 'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 334, in getSqlValue_zone
+    sqlValue = self.getValueInCalc100(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 138, in getValueInCalc100
+    self.itemvalue_one = self.calcddds.calcddds_1('zone_ddds', self.itemnameOne, zoneid, startT, endT)[0]
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 218, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000474D940>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 351, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000000000474D940>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000046CE6A0>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 209, in getCalc_Numerator_zone
+    self.itemvalue_one = self.getValueInddds(self.itemnameOne, zoneid, startT, endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000046CE6A0>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A07B8>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 242, in getCalc_denominator_zone
+    self.itemvalue_two = self.getValueInddds(self.itemnameOne, zoneid, startT, endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 53, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A07B8>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A02B0>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 338, in getSqlValue_zone
+    configValue = self.configValue.getvalue(itemname)
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A02B0>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A07F0>: Failed to establish a new connection: [Errno 10065] ',))
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 324, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 114, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 197, in getCalc_Numerator_zone
+    configValue = self.configValue.getvalue(self.itemnameOne)
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 37, in getvalue
+    self.login()
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 31, in login
+    self.loginr=self.session.post(self.addr, data=json.dumps(self.params), headers=self.headers)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 581, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='10.1.1.89', port=9999): Max retries exceeded with url: /syscenter/api/v1/currentUser (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000047A07F0>: Failed to establish a new connection: [Errno 10065] ',))
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:44 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:44 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:45 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:45 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:45 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:45 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:45 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:45 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:45 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:45 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:45 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:45 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:45 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:45 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:45 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:45 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:45 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:45 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 93, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:45 log.py[line:17] DEBUG 执行过程中出错
+Fri, 10 May 2019 13:30:45 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Fri, 10 May 2019 13:30:45 log.py[line:17] DEBUG 指标计算时出错
+Fri, 10 May 2019 13:30:45 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 86, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')

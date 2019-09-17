@@ -1,0 +1,54 @@
+Mon, 06 May 2019 20:54:26 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_doc
+Mon, 06 May 2019 20:54:26 log.py[line:20] ERROR '%' must be followed by '%' or '(', found: "% (dbname_dp) s.`ipt_operation` t1 INNER JOIN % (dbname_dp) s.`ipt_drug` t2 USING (Event_No) INNER JOIN % (dbname_dp) s.`ipt_inpatient` t3 ON t2.`Event_No` = t3.event_no inner join %(dbname_knowledge)s.`base_product` t4 on t2.drug_id=t4.product_id inner join %(dbname_knowledge)s.`tb_product_drug` t5 ON t4.map_product_id = t5.product_id WHERE t1.Zone_ID = %% s AND t2.Order_Doc_ID =%% s AND t1.key_time BETWEEN %% s AND %% s AND t1.Operation_Cut_Type = '\xe2\x85\xa0' AND t2.`Antimicrobial` = '1' AND t2.Drug_Using_Aim = '\xe9\xa2\x84\xe9\x98\xb2' AND (\t(\tTIME_TO_SEC(TIMEDIFF(Valid_Time,Operation_Start_Time)) >= - 72 * 60 * 60\tAND TIME_TO_SEC(TIMEDIFF(\tValid_Time,\tOperation_Start_Time)) <= 72 * 60 * 60)) AND drug_code REGEXP %% s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 732, in _interpolate_some
+    "'%%' must be followed by '%%' or '(', found: %r" % (rest,))
+InterpolationSyntaxError: '%' must be followed by '%' or '(', found: "% (dbname_dp) s.`ipt_operation` t1 INNER JOIN % (dbname_dp) s.`ipt_drug` t2 USING (Event_No) INNER JOIN % (dbname_dp) s.`ipt_inpatient` t3 ON t2.`Event_No` = t3.event_no inner join %(dbname_knowledge)s.`base_product` t4 on t2.drug_id=t4.product_id inner join %(dbname_knowledge)s.`tb_product_drug` t5 ON t4.map_product_id = t5.product_id WHERE t1.Zone_ID = %% s AND t2.Order_Doc_ID =%% s AND t1.key_time BETWEEN %% s AND %% s AND t1.Operation_Cut_Type = '\xe2\x85\xa0' AND t2.`Antimicrobial` = '1' AND t2.Drug_Using_Aim = '\xe9\xa2\x84\xe9\x98\xb2' AND (\t(\tTIME_TO_SEC(TIMEDIFF(Valid_Time,Operation_Start_Time)) >= - 72 * 60 * 60\tAND TIME_TO_SEC(TIMEDIFF(\tValid_Time,\tOperation_Start_Time)) <= 72 * 60 * 60)) AND drug_code REGEXP %% s"
+Mon, 06 May 2019 20:54:26 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_dept
+Mon, 06 May 2019 20:54:26 log.py[line:20] ERROR '%' must be followed by '%' or '(', found: "% (dbname_dp) s.`ipt_operation` t1 INNER JOIN % (dbname_dp) s.`ipt_drug` t2 USING (Event_No) INNER JOIN % (dbname_dp) s.`ipt_inpatient` t3 ON t2.`Event_No` = t3.event_no inner join %(dbname_knowledge)s.`base_product` t4 on t2.drug_id=t4.product_id inner join %(dbname_knowledge)s.`tb_product_drug` t5 ON t4.map_product_id = t5.product_id WHERE t1.Zone_ID = %% s AND t3.out_dept_code = %% s AND t1.key_time BETWEEN %% s AND %% s AND t1.Operation_Cut_Type = '\xe2\x85\xa0' AND t2.`Antimicrobial` = '1' AND t2.Drug_Using_Aim = '\xe9\xa2\x84\xe9\x98\xb2' AND (\t(\t\tTIME_TO_SEC(TIMEDIFF(\tValid_Time,\tOperation_Start_Time)) >= - 72 * 60 * 60 AND TIME_TO_SEC(TIMEDIFF(Valid_Time,\tOperation_Start_Time)\t) <= 72 * 60 * 60\t)) AND drug_code REGEXP %% s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 732, in _interpolate_some
+    "'%%' must be followed by '%%' or '(', found: %r" % (rest,))
+InterpolationSyntaxError: '%' must be followed by '%' or '(', found: "% (dbname_dp) s.`ipt_operation` t1 INNER JOIN % (dbname_dp) s.`ipt_drug` t2 USING (Event_No) INNER JOIN % (dbname_dp) s.`ipt_inpatient` t3 ON t2.`Event_No` = t3.event_no inner join %(dbname_knowledge)s.`base_product` t4 on t2.drug_id=t4.product_id inner join %(dbname_knowledge)s.`tb_product_drug` t5 ON t4.map_product_id = t5.product_id WHERE t1.Zone_ID = %% s AND t3.out_dept_code = %% s AND t1.key_time BETWEEN %% s AND %% s AND t1.Operation_Cut_Type = '\xe2\x85\xa0' AND t2.`Antimicrobial` = '1' AND t2.Drug_Using_Aim = '\xe9\xa2\x84\xe9\x98\xb2' AND (\t(\t\tTIME_TO_SEC(TIMEDIFF(\tValid_Time,\tOperation_Start_Time)) >= - 72 * 60 * 60 AND TIME_TO_SEC(TIMEDIFF(Valid_Time,\tOperation_Start_Time)\t) <= 72 * 60 * 60\t)) AND drug_code REGEXP %% s"
+Mon, 06 May 2019 20:54:26 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Mon, 06 May 2019 20:54:26 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Mon, 06 May 2019 20:54:26 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E9%80%81%E6%A3%80%E6%A0%87%E8%AF%86 HTTP/1.1" 200 None
+Mon, 06 May 2019 20:57:52 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_doc
+Mon, 06 May 2019 20:57:52 log.py[line:20] ERROR '%' must be followed by '%' or '(', found: "% (dbname_dp) s.`ipt_operation` t1 INNER JOIN % (dbname_dp) s.`ipt_drug` t2 USING (Event_No) INNER JOIN % (dbname_dp) s.`ipt_inpatient` t3 ON t2.`Event_No` = t3.event_no inner join %(dbname_knowledge)s.`base_product` t4 on t2.drug_id=t4.product_id inner join %(dbname_knowledge)s.`tb_product_drug` t5 ON t4.map_product_id = t5.product_id WHERE t1.Zone_ID = %% s AND t2.Order_Doc_ID =%% s AND t1.key_time BETWEEN %% s AND %% s AND t1.Operation_Cut_Type = '\xe2\x85\xa0' AND t2.`Antimicrobial` = '1' AND t2.Drug_Using_Aim = '\xe9\xa2\x84\xe9\x98\xb2' AND (\t(\tTIME_TO_SEC(TIMEDIFF(Valid_Time,Operation_Start_Time)) >= - 72 * 60 * 60\tAND TIME_TO_SEC(TIMEDIFF(\tValid_Time,\tOperation_Start_Time)) <= 72 * 60 * 60)) AND drug_code REGEXP %% s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 732, in _interpolate_some
+    "'%%' must be followed by '%%' or '(', found: %r" % (rest,))
+InterpolationSyntaxError: '%' must be followed by '%' or '(', found: "% (dbname_dp) s.`ipt_operation` t1 INNER JOIN % (dbname_dp) s.`ipt_drug` t2 USING (Event_No) INNER JOIN % (dbname_dp) s.`ipt_inpatient` t3 ON t2.`Event_No` = t3.event_no inner join %(dbname_knowledge)s.`base_product` t4 on t2.drug_id=t4.product_id inner join %(dbname_knowledge)s.`tb_product_drug` t5 ON t4.map_product_id = t5.product_id WHERE t1.Zone_ID = %% s AND t2.Order_Doc_ID =%% s AND t1.key_time BETWEEN %% s AND %% s AND t1.Operation_Cut_Type = '\xe2\x85\xa0' AND t2.`Antimicrobial` = '1' AND t2.Drug_Using_Aim = '\xe9\xa2\x84\xe9\x98\xb2' AND (\t(\tTIME_TO_SEC(TIMEDIFF(Valid_Time,Operation_Start_Time)) >= - 72 * 60 * 60\tAND TIME_TO_SEC(TIMEDIFF(\tValid_Time,\tOperation_Start_Time)) <= 72 * 60 * 60)) AND drug_code REGEXP %% s"
+Mon, 06 May 2019 20:57:52 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_dept
+Mon, 06 May 2019 20:57:52 log.py[line:20] ERROR '%' must be followed by '%' or '(', found: "% (dbname_dp) s.`ipt_operation` t1 INNER JOIN % (dbname_dp) s.`ipt_drug` t2 USING (Event_No) INNER JOIN % (dbname_dp) s.`ipt_inpatient` t3 ON t2.`Event_No` = t3.event_no inner join %(dbname_knowledge)s.`base_product` t4 on t2.drug_id=t4.product_id inner join %(dbname_knowledge)s.`tb_product_drug` t5 ON t4.map_product_id = t5.product_id WHERE t1.Zone_ID = %% s AND t3.out_dept_code = %% s AND t1.key_time BETWEEN %% s AND %% s AND t1.Operation_Cut_Type = '\xe2\x85\xa0' AND t2.`Antimicrobial` = '1' AND t2.Drug_Using_Aim = '\xe9\xa2\x84\xe9\x98\xb2' AND (\t(\t\tTIME_TO_SEC(TIMEDIFF(\tValid_Time,\tOperation_Start_Time)) >= - 72 * 60 * 60 AND TIME_TO_SEC(TIMEDIFF(Valid_Time,\tOperation_Start_Time)\t) <= 72 * 60 * 60\t)) AND drug_code REGEXP %% s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 732, in _interpolate_some
+    "'%%' must be followed by '%%' or '(', found: %r" % (rest,))
+InterpolationSyntaxError: '%' must be followed by '%' or '(', found: "% (dbname_dp) s.`ipt_operation` t1 INNER JOIN % (dbname_dp) s.`ipt_drug` t2 USING (Event_No) INNER JOIN % (dbname_dp) s.`ipt_inpatient` t3 ON t2.`Event_No` = t3.event_no inner join %(dbname_knowledge)s.`base_product` t4 on t2.drug_id=t4.product_id inner join %(dbname_knowledge)s.`tb_product_drug` t5 ON t4.map_product_id = t5.product_id WHERE t1.Zone_ID = %% s AND t3.out_dept_code = %% s AND t1.key_time BETWEEN %% s AND %% s AND t1.Operation_Cut_Type = '\xe2\x85\xa0' AND t2.`Antimicrobial` = '1' AND t2.Drug_Using_Aim = '\xe9\xa2\x84\xe9\x98\xb2' AND (\t(\t\tTIME_TO_SEC(TIMEDIFF(\tValid_Time,\tOperation_Start_Time)) >= - 72 * 60 * 60 AND TIME_TO_SEC(TIMEDIFF(Valid_Time,\tOperation_Start_Time)\t) <= 72 * 60 * 60\t)) AND drug_code REGEXP %% s"
+Mon, 06 May 2019 20:57:52 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Mon, 06 May 2019 20:57:52 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Mon, 06 May 2019 20:57:52 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E9%80%81%E6%A3%80%E6%A0%87%E8%AF%86 HTTP/1.1" 200 None

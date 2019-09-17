@@ -1,0 +1,526 @@
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 该指标在指标库中不存在,急诊患者使用数量
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊患者使用数量
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 该指标在指标库中不存在,住院患者使用数量
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR (1054, "Unknown column 'from_no_in' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 317, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 44, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'from_no_in' in 'field list'")
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR (1054, "Unknown column 'from_no_in' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 317, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 44, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'from_no_in' in 'field list'")
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊输液药物输液总量
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 读取配置项发生了错误,zone,门诊输液药物输液总量
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR No option '\xe9\x97\xa8\xe8\xaf\x8a\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe9\x97\xa8\xe8\xaf\x8a\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 327, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 220, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 该指标在指标库中不存在,住院输液药物输液总量
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 读取配置项发生了错误,zone,住院输液药物输液总量
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR No option '\xe4\xbd\x8f\xe9\x99\xa2\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe4\xbd\x8f\xe9\x99\xa2\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 327, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 220, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊中药饮片总帖数
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊中药饮片总味数
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 读取配置项发生了错误,zone,门诊中药饮片总味数
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR No option '\xe9\x97\xa8\xe8\xaf\x8a\xe4\xb8\xad\xe8\x8d\xaf\xe9\xa5\xae\xe7\x89\x87\xe6\x80\xbb\xe5\x91\xb3\xe6\x95\xb0' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe9\x97\xa8\xe8\xaf\x8a\xe4\xb8\xad\xe8\x8d\xaf\xe9\xa5\xae\xe7\x89\x87\xe6\x80\xbb\xe5\x91\xb3\xe6\x95\xb0' in section: 'zone'
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 327, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 220, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 读取配置项发生了错误,zone,门诊患者使用中药饮片总费用
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR No option '\xe9\x97\xa8\xe8\xaf\x8a\xe6\x82\xa3\xe8\x80\x85\xe4\xbd\xbf\xe7\x94\xa8\xe4\xb8\xad\xe8\x8d\xaf\xe9\xa5\xae\xe7\x89\x87\xe6\x80\xbb\xe8\xb4\xb9\xe7\x94\xa8' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe9\x97\xa8\xe8\xaf\x8a\xe6\x82\xa3\xe8\x80\x85\xe4\xbd\xbf\xe7\x94\xa8\xe4\xb8\xad\xe8\x8d\xaf\xe9\xa5\xae\xe7\x89\x87\xe6\x80\xbb\xe8\xb4\xb9\xe7\x94\xa8' in section: 'zone'
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 327, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 220, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 指标计算时出错
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 342
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 89, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 342
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 指标计算时出错
+Thu, 14 Mar 2019 15:04:54 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 342
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 89, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 342
+Thu, 14 Mar 2019 15:04:54 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Thu, 14 Mar 2019 15:04:56 log.py[line:17] DEBUG 该指标在指标库中不存在,出院患者中抗菌药物治疗使用前病原学检查送检人次
+Thu, 14 Mar 2019 15:04:58 log.py[line:17] DEBUG 该指标在指标库中不存在,出院患者使用抗真菌药物人次
+Thu, 14 Mar 2019 15:04:58 log.py[line:17] DEBUG 读取配置项发生了错误,zone,出院患者使用抗真菌药物人次
+Thu, 14 Mar 2019 15:04:58 log.py[line:20] ERROR No option '\xe5\x87\xba\xe9\x99\xa2\xe6\x82\xa3\xe8\x80\x85\xe4\xbd\xbf\xe7\x94\xa8\xe6\x8a\x97\xe7\x9c\x9f\xe8\x8f\x8c\xe8\x8d\xaf\xe7\x89\xa9\xe4\xba\xba\xe6\xac\xa1' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe5\x87\xba\xe9\x99\xa2\xe6\x82\xa3\xe8\x80\x85\xe4\xbd\xbf\xe7\x94\xa8\xe6\x8a\x97\xe7\x9c\x9f\xe8\x8f\x8c\xe8\x8d\xaf\xe7\x89\xa9\xe4\xba\xba\xe6\xac\xa1' in section: 'zone'
+Thu, 14 Mar 2019 15:04:58 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 15:04:58 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 327, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 220, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Thu, 14 Mar 2019 15:05:05 log.py[line:17] DEBUG 读取配置项发生了错误,zone,门诊患者使用中药饮片总费用
+Thu, 14 Mar 2019 15:05:05 log.py[line:20] ERROR No option '\xe9\x97\xa8\xe8\xaf\x8a\xe6\x82\xa3\xe8\x80\x85\xe4\xbd\xbf\xe7\x94\xa8\xe4\xb8\xad\xe8\x8d\xaf\xe9\xa5\xae\xe7\x89\x87\xe6\x80\xbb\xe8\xb4\xb9\xe7\x94\xa8' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe9\x97\xa8\xe8\xaf\x8a\xe6\x82\xa3\xe8\x80\x85\xe4\xbd\xbf\xe7\x94\xa8\xe4\xb8\xad\xe8\x8d\xaf\xe9\xa5\xae\xe7\x89\x87\xe6\x80\xbb\xe8\xb4\xb9\xe7\x94\xa8' in section: 'zone'
+Thu, 14 Mar 2019 15:05:05 log.py[line:17] DEBUG 指标计算时出错
+Thu, 14 Mar 2019 15:05:05 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 96, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Thu, 14 Mar 2019 15:05:05 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Thu, 14 Mar 2019 15:05:05 log.py[line:17] DEBUG 读取配置项发生了错误,zone,急诊患者使用中药饮片总费用
+Thu, 14 Mar 2019 15:05:05 log.py[line:20] ERROR No option '\xe6\x80\xa5\xe8\xaf\x8a\xe6\x82\xa3\xe8\x80\x85\xe4\xbd\xbf\xe7\x94\xa8\xe4\xb8\xad\xe8\x8d\xaf\xe9\xa5\xae\xe7\x89\x87\xe6\x80\xbb\xe8\xb4\xb9\xe7\x94\xa8' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe6\x80\xa5\xe8\xaf\x8a\xe6\x82\xa3\xe8\x80\x85\xe4\xbd\xbf\xe7\x94\xa8\xe4\xb8\xad\xe8\x8d\xaf\xe9\xa5\xae\xe7\x89\x87\xe6\x80\xbb\xe8\xb4\xb9\xe7\x94\xa8' in section: 'zone'
+Thu, 14 Mar 2019 15:05:05 log.py[line:17] DEBUG 指标计算时出错
+Thu, 14 Mar 2019 15:05:05 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 96, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Thu, 14 Mar 2019 15:05:05 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Thu, 14 Mar 2019 15:05:05 log.py[line:17] DEBUG 读取配置项发生了错误,zone,住院患者使用中药饮片总费用
+Thu, 14 Mar 2019 15:05:05 log.py[line:20] ERROR No option '\xe4\xbd\x8f\xe9\x99\xa2\xe6\x82\xa3\xe8\x80\x85\xe4\xbd\xbf\xe7\x94\xa8\xe4\xb8\xad\xe8\x8d\xaf\xe9\xa5\xae\xe7\x89\x87\xe6\x80\xbb\xe8\xb4\xb9\xe7\x94\xa8' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe4\xbd\x8f\xe9\x99\xa2\xe6\x82\xa3\xe8\x80\x85\xe4\xbd\xbf\xe7\x94\xa8\xe4\xb8\xad\xe8\x8d\xaf\xe9\xa5\xae\xe7\x89\x87\xe6\x80\xbb\xe8\xb4\xb9\xe7\x94\xa8' in section: 'zone'
+Thu, 14 Mar 2019 15:05:05 log.py[line:17] DEBUG 指标计算时出错
+Thu, 14 Mar 2019 15:05:05 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 96, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Thu, 14 Mar 2019 15:05:05 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Thu, 14 Mar 2019 15:24:28 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 15:24:28 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 411
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 322, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 74, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 411
+Thu, 14 Mar 2019 15:24:28 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 15:24:28 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 414
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 322, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 74, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 414
+Thu, 14 Mar 2019 15:24:28 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 15:24:28 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 414
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 322, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 74, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 414
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 192.168.1.209:9999
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:393] DEBUG http://192.168.1.209:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:393] DEBUG http://192.168.1.209:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 405 0
+Thu, 14 Mar 2019 15:24:28 log.py[line:20] ERROR No JSON object could be decoded
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 354, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 54, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 42, in getvalue
+    result = response.json()
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\ipharmacare\python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\ipharmacare\python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 192.168.1.209:9999
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:393] DEBUG http://192.168.1.209:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:393] DEBUG http://192.168.1.209:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 405 0
+Thu, 14 Mar 2019 15:24:28 log.py[line:20] ERROR No JSON object could be decoded
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 354, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 54, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 42, in getvalue
+    result = response.json()
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\ipharmacare\python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\ipharmacare\python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 192.168.1.209:9999
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:393] DEBUG http://192.168.1.209:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:393] DEBUG http://192.168.1.209:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 405 0
+Thu, 14 Mar 2019 15:24:28 log.py[line:20] ERROR No JSON object could be decoded
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 354, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 54, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 42, in getvalue
+    result = response.json()
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\ipharmacare\python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\ipharmacare\python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 192.168.1.209:9999
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:393] DEBUG http://192.168.1.209:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Thu, 14 Mar 2019 15:24:28 connectionpool.py[line:393] DEBUG http://192.168.1.209:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=qty%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95 HTTP/1.1" 405 0
+Thu, 14 Mar 2019 15:24:28 log.py[line:20] ERROR No JSON object could be decoded
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 354, in getSqlValue_zone
+    sqlValue = self.getValueInddds(itemname,zoneid,startT,endT)[0]
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 54, in getValueInddds
+    qtyvalue=self.configValue.getvalue('qty')
+  File "C:\Users\ipharmacare\newreport\configvalue\getconfigvalue.py", line 42, in getvalue
+    result = response.json()
+  File "C:\Users\ipharmacare\python27\lib\site-packages\requests\models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\ipharmacare\python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\ipharmacare\python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+Thu, 14 Mar 2019 15:57:47 log.py[line:17] DEBUG 数据库连接出错
+Thu, 14 Mar 2019 15:57:47 log.py[line:20] ERROR (1049, "Unknown database 'ipharmacare_bi_report354'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 28, in connect
+    return MySQLdb.Connect(host=self.host,port=self.port,user=self.username,passwd=self.passwd,db=dbname,charset=self.charset)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'ipharmacare_bi_report354'")
+Thu, 14 Mar 2019 16:01:17 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 16:01:17 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 318
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 317, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 44, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 318
+Thu, 14 Mar 2019 16:01:17 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 16:01:17 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 312
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 317, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 44, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 312
+Thu, 14 Mar 2019 16:01:17 log.py[line:17] DEBUG 该指标在指标库中不存在,急诊患者使用中药饮片总费用
+Thu, 14 Mar 2019 16:01:17 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 16:01:17 log.py[line:20] ERROR (1054, "Unknown column 'from_no_in' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 317, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 44, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'from_no_in' in 'field list'")
+Thu, 14 Mar 2019 16:01:17 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 16:01:17 log.py[line:20] ERROR (1054, "Unknown column 'from_no_in' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 317, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 44, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'from_no_in' in 'field list'")
+Thu, 14 Mar 2019 16:01:18 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊输液药物输液总量
+Thu, 14 Mar 2019 16:01:18 log.py[line:17] DEBUG 读取配置项发生了错误,zone,门诊输液药物输液总量
+Thu, 14 Mar 2019 16:01:18 log.py[line:20] ERROR No option '\xe9\x97\xa8\xe8\xaf\x8a\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe9\x97\xa8\xe8\xaf\x8a\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Thu, 14 Mar 2019 16:01:18 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 16:01:18 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 327, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 220, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Thu, 14 Mar 2019 16:01:18 log.py[line:17] DEBUG 该指标在指标库中不存在,住院输液药物输液总量
+Thu, 14 Mar 2019 16:01:18 log.py[line:17] DEBUG 读取配置项发生了错误,zone,住院输液药物输液总量
+Thu, 14 Mar 2019 16:01:18 log.py[line:20] ERROR No option '\xe4\xbd\x8f\xe9\x99\xa2\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe4\xbd\x8f\xe9\x99\xa2\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'zone'
+Thu, 14 Mar 2019 16:01:18 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 16:01:18 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 327, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 220, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Thu, 14 Mar 2019 16:01:18 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 16:01:18 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 367
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 317, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 44, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 367
+Thu, 14 Mar 2019 16:01:18 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 16:01:18 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 283
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 317, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 44, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 283
+Thu, 14 Mar 2019 16:01:18 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 16:01:18 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 283
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 327, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 220, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 283
+Thu, 14 Mar 2019 16:01:19 log.py[line:17] DEBUG 执行过程中出错
+Thu, 14 Mar 2019 16:01:19 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 318
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 327, in getSqlValue_zone
+    sqlValue = self.getValueInCalc(itemname, zoneid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 115, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 220, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_zoneid_one(self.cur, self.itemOneSql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 318
+Thu, 14 Mar 2019 16:01:20 log.py[line:17] DEBUG 指标计算时出错
+Thu, 14 Mar 2019 16:01:20 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 375
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 89, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 375
+Thu, 14 Mar 2019 16:01:20 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Thu, 14 Mar 2019 16:01:21 log.py[line:17] DEBUG 指标计算时出错
+Thu, 14 Mar 2019 16:01:21 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 375
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 89, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 375
+Thu, 14 Mar 2019 16:01:21 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Thu, 14 Mar 2019 16:01:26 log.py[line:17] DEBUG 该指标在指标库中不存在,出院患者中抗菌药物治疗使用前病原学检查送检人次

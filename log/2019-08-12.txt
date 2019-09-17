@@ -1,0 +1,795 @@
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_doc
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'hospital_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_doc'
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'default_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_doc'
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_doc
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'ConfigurationItem_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_doc'
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,doc_ddds
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'doc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'doc_ddds'
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDoc_ddds
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'hospitalDoc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDoc_ddds'
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_dept
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'hospital_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_dept'
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,default_dept
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'default_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_dept'
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_dept
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'ConfigurationItem_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_dept'
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,dept_ddds
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'dept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'dept_ddds'
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDept_ddds
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'hospitalDept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDept_ddds'
+Mon, 12 Aug 2019 14:04:03 log.py[line:17] DEBUG 读取配置项发生了错误,default_group
+Mon, 12 Aug 2019 14:04:03 log.py[line:20] ERROR No section: 'default_group'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_group'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_doc
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'hospital_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_doc'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'default_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_doc'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_doc
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'ConfigurationItem_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_doc'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,doc_ddds
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'doc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'doc_ddds'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDoc_ddds
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'hospitalDoc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDoc_ddds'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_dept
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'hospital_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_dept'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,default_dept
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'default_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_dept'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_dept
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'ConfigurationItem_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_dept'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,dept_ddds
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'dept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'dept_ddds'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDept_ddds
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'hospitalDept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDept_ddds'
+Mon, 12 Aug 2019 14:10:03 log.py[line:17] DEBUG 读取配置项发生了错误,default_group
+Mon, 12 Aug 2019 14:10:03 log.py[line:20] ERROR No section: 'default_group'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_group'
+Mon, 12 Aug 2019 14:11:04 log.py[line:17] DEBUG 执行过程中出错
+Mon, 12 Aug 2019 14:11:04 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\xe9\x97\xa8\xe8\xaf\x8a\xe9\x9d\x99\xe8\x84\x89\xe8\xbe\x93\xe6\xb6\xb2\xe5\xa4\x84\xe6\x96\xb9\xe6\x95\xb0:SELECT  COUNT(DISTINCT (recipe_id)) FROM  ipharmacar' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\xe9\x97\xa8\xe8\xaf\x8a\xe9\x9d\x99\xe8\x84\x89\xe8\xbe\x93\xe6\xb6\xb2\xe5\xa4\x84\xe6\x96\xb9\xe6\x95\xb0:SELECT  COUNT(DISTINCT (recipe_id)) FROM  ipharmacar' at line 1")
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_doc
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'hospital_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_doc'
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'default_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_doc'
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_doc
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'ConfigurationItem_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_doc'
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,doc_ddds
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'doc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'doc_ddds'
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDoc_ddds
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'hospitalDoc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDoc_ddds'
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_dept
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'hospital_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_dept'
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,default_dept
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'default_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_dept'
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_dept
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'ConfigurationItem_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_dept'
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,dept_ddds
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'dept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'dept_ddds'
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDept_ddds
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'hospitalDept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDept_ddds'
+Mon, 12 Aug 2019 14:36:06 log.py[line:17] DEBUG 读取配置项发生了错误,default_group
+Mon, 12 Aug 2019 14:36:06 log.py[line:20] ERROR No section: 'default_group'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_group'
+Mon, 12 Aug 2019 14:37:25 log.py[line:17] DEBUG 执行过程中出错
+Mon, 12 Aug 2019 14:37:25 log.py[line:20] ERROR (1146, "Table 'ipharmacare_dp.opt_recipe_drug' doesn't exist")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'ipharmacare_dp.opt_recipe_drug' doesn't exist")
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_doc
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'hospital_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_doc'
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'default_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_doc'
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_doc
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'ConfigurationItem_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_doc'
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,doc_ddds
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'doc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'doc_ddds'
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDoc_ddds
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'hospitalDoc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDoc_ddds'
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_dept
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'hospital_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_dept'
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,default_dept
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'default_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_dept'
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_dept
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'ConfigurationItem_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_dept'
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,dept_ddds
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'dept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'dept_ddds'
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDept_ddds
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'hospitalDept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDept_ddds'
+Mon, 12 Aug 2019 14:48:13 log.py[line:17] DEBUG 读取配置项发生了错误,default_group
+Mon, 12 Aug 2019 14:48:13 log.py[line:20] ERROR No section: 'default_group'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_group'
+Mon, 12 Aug 2019 14:48:20 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊去年同期就诊人次数
+Mon, 12 Aug 2019 14:48:20 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊输液总人次
+Mon, 12 Aug 2019 14:48:24 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊中药饮片处方人次
+Mon, 12 Aug 2019 14:48:24 log.py[line:17] DEBUG 该指标在指标库中不存在,门急诊处方人次
+Mon, 12 Aug 2019 14:48:24 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊处方人次
+Mon, 12 Aug 2019 14:48:24 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊抗菌药物人次数占比(%)
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_doc
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'hospital_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_doc'
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'default_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_doc'
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_doc
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'ConfigurationItem_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_doc'
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,doc_ddds
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'doc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'doc_ddds'
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDoc_ddds
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'hospitalDoc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDoc_ddds'
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_dept
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'hospital_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_dept'
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,default_dept
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'default_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_dept'
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_dept
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'ConfigurationItem_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_dept'
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,dept_ddds
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'dept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'dept_ddds'
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDept_ddds
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'hospitalDept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDept_ddds'
+Mon, 12 Aug 2019 15:13:53 log.py[line:17] DEBUG 读取配置项发生了错误,default_group
+Mon, 12 Aug 2019 15:13:53 log.py[line:20] ERROR No section: 'default_group'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_group'
+Mon, 12 Aug 2019 15:14:00 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊去年同期就诊人次数
+Mon, 12 Aug 2019 15:14:01 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊输液总人次
+Mon, 12 Aug 2019 15:14:05 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊中药饮片处方人次
+Mon, 12 Aug 2019 15:14:05 log.py[line:17] DEBUG 该指标在指标库中不存在,门急诊处方人次
+Mon, 12 Aug 2019 15:14:05 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊处方人次
+Mon, 12 Aug 2019 15:14:05 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊抗菌药物人次数占比(%)
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_doc
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'hospital_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_doc'
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'default_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_doc'
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_doc
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'ConfigurationItem_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_doc'
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,doc_ddds
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'doc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'doc_ddds'
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDoc_ddds
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'hospitalDoc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDoc_ddds'
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_dept
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'hospital_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_dept'
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,default_dept
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'default_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_dept'
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_dept
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'ConfigurationItem_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_dept'
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,dept_ddds
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'dept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'dept_ddds'
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDept_ddds
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'hospitalDept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDept_ddds'
+Mon, 12 Aug 2019 15:35:19 log.py[line:17] DEBUG 读取配置项发生了错误,default_group
+Mon, 12 Aug 2019 15:35:19 log.py[line:20] ERROR No section: 'default_group'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_group'
+Mon, 12 Aug 2019 15:35:26 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊去年同期就诊人次数
+Mon, 12 Aug 2019 15:35:26 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊输液总人次
+Mon, 12 Aug 2019 15:35:31 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊中药饮片处方人次
+Mon, 12 Aug 2019 15:35:31 log.py[line:17] DEBUG 该指标在指标库中不存在,门急诊处方人次
+Mon, 12 Aug 2019 15:35:31 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊处方人次
+Mon, 12 Aug 2019 15:35:31 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊抗菌药物人次数占比(%)
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_doc
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'hospital_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_doc'
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'default_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_doc'
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_doc
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'ConfigurationItem_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_doc'
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,doc_ddds
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'doc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'doc_ddds'
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDoc_ddds
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'hospitalDoc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDoc_ddds'
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_dept
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'hospital_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_dept'
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,default_dept
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'default_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_dept'
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_dept
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'ConfigurationItem_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_dept'
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,dept_ddds
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'dept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'dept_ddds'
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDept_ddds
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'hospitalDept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDept_ddds'
+Mon, 12 Aug 2019 15:37:48 log.py[line:17] DEBUG 读取配置项发生了错误,default_group
+Mon, 12 Aug 2019 15:37:48 log.py[line:20] ERROR No section: 'default_group'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_group'
+Mon, 12 Aug 2019 15:37:49 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Mon, 12 Aug 2019 15:37:49 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Mon, 12 Aug 2019 15:37:49 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E9%80%81%E6%A3%80%E6%A0%87%E8%AF%86 HTTP/1.1" 200 None
+Mon, 12 Aug 2019 15:40:13 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Mon, 12 Aug 2019 15:40:13 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Mon, 12 Aug 2019 15:40:13 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E9%80%81%E6%A3%80%E6%A0%87%E8%AF%86 HTTP/1.1" 200 None
+Mon, 12 Aug 2019 15:40:15 log.py[line:17] DEBUG 该指标在指标库中不存在,去年同期出院患者总人次
+Mon, 12 Aug 2019 15:40:15 log.py[line:17] DEBUG 该指标在指标库中不存在,使用非限制级抗菌药物出院患者中病原学检查送检人次
+Mon, 12 Aug 2019 15:40:15 log.py[line:17] DEBUG 该指标在指标库中不存在,使用限制级抗菌药物出院患者中病原学检查送检人次
+Mon, 12 Aug 2019 15:40:15 log.py[line:17] DEBUG 该指标在指标库中不存在,使用特殊级抗菌药物出院患者中病原学检查送检人次
+Mon, 12 Aug 2019 15:40:15 log.py[line:17] DEBUG 该指标在指标库中不存在,出院患者静脉输液总人次
+Mon, 12 Aug 2019 15:40:15 log.py[line:17] DEBUG 该指标在指标库中不存在,出院患者总人次（排除中药饮片）
+Mon, 12 Aug 2019 15:40:15 log.py[line:17] DEBUG 该指标在指标库中不存在,出院患者抗菌药物预防使用人次
+Mon, 12 Aug 2019 16:42:56 log.py[line:17] DEBUG 数据库连接出错
+Mon, 12 Aug 2019 16:42:56 log.py[line:20] ERROR (2003, "Can't connect to MySQL server on '10.1.1.89' (10060)")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 28, in connect
+    return MySQLdb.Connect(host=self.host,port=self.port,user=self.username,passwd=self.passwd,db=dbname,charset=self.charset)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '10.1.1.89' (10060)")
+Mon, 12 Aug 2019 16:45:21 log.py[line:17] DEBUG 数据库连接出错
+Mon, 12 Aug 2019 16:45:21 log.py[line:20] ERROR (2003, "Can't connect to MySQL server on '10.1.1.89' (10060)")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 28, in connect
+    return MySQLdb.Connect(host=self.host,port=self.port,user=self.username,passwd=self.passwd,db=dbname,charset=self.charset)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '10.1.1.89' (10060)")
+Mon, 12 Aug 2019 16:51:14 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_doc
+Mon, 12 Aug 2019 16:51:14 log.py[line:20] ERROR No section: 'hospital_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_doc'
+Mon, 12 Aug 2019 16:51:14 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Mon, 12 Aug 2019 16:51:14 log.py[line:20] ERROR No section: 'default_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_doc'
+Mon, 12 Aug 2019 16:51:15 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_doc
+Mon, 12 Aug 2019 16:51:15 log.py[line:20] ERROR No section: 'ConfigurationItem_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_doc'
+Mon, 12 Aug 2019 16:51:15 log.py[line:17] DEBUG 读取配置项发生了错误,doc_ddds
+Mon, 12 Aug 2019 16:51:15 log.py[line:20] ERROR No section: 'doc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'doc_ddds'
+Mon, 12 Aug 2019 16:51:15 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDoc_ddds
+Mon, 12 Aug 2019 16:51:15 log.py[line:20] ERROR No section: 'hospitalDoc_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDoc_ddds'
+Mon, 12 Aug 2019 16:51:15 log.py[line:17] DEBUG 读取配置项发生了错误,hospital_dept
+Mon, 12 Aug 2019 16:51:15 log.py[line:20] ERROR No section: 'hospital_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospital_dept'
+Mon, 12 Aug 2019 16:51:15 log.py[line:17] DEBUG 读取配置项发生了错误,default_dept
+Mon, 12 Aug 2019 16:51:15 log.py[line:20] ERROR No section: 'default_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_dept'
+Mon, 12 Aug 2019 16:51:15 log.py[line:17] DEBUG 读取配置项发生了错误,ConfigurationItem_dept
+Mon, 12 Aug 2019 16:51:15 log.py[line:20] ERROR No section: 'ConfigurationItem_dept'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'ConfigurationItem_dept'
+Mon, 12 Aug 2019 16:51:15 log.py[line:17] DEBUG 读取配置项发生了错误,dept_ddds
+Mon, 12 Aug 2019 16:51:15 log.py[line:20] ERROR No section: 'dept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'dept_ddds'
+Mon, 12 Aug 2019 16:51:15 log.py[line:17] DEBUG 读取配置项发生了错误,hospitalDept_ddds
+Mon, 12 Aug 2019 16:51:15 log.py[line:20] ERROR No section: 'hospitalDept_ddds'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'hospitalDept_ddds'
+Mon, 12 Aug 2019 16:51:15 log.py[line:17] DEBUG 读取配置项发生了错误,default_group
+Mon, 12 Aug 2019 16:51:15 log.py[line:20] ERROR No section: 'default_group'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 642, in items
+    raise NoSectionError(section)
+NoSectionError: No section: 'default_group'
+Mon, 12 Aug 2019 16:51:15 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Mon, 12 Aug 2019 16:51:15 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Mon, 12 Aug 2019 16:51:15 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E9%80%81%E6%A3%80%E6%A0%87%E8%AF%86 HTTP/1.1" 200 None
+Mon, 12 Aug 2019 17:35:51 connectionpool.py[line:205] DEBUG Starting new HTTP connection (1): 10.1.1.89:9999
+Mon, 12 Aug 2019 17:35:51 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "POST /syscenter/api/v1/currentUser HTTP/1.1" 200 None
+Mon, 12 Aug 2019 17:35:51 connectionpool.py[line:393] DEBUG http://10.1.1.89:9999 "GET /syscenter/api/v1/config/selectSysConfig?showName=%E6%8A%97%E8%8F%8C%E8%8D%AF%E7%89%A9%E9%80%81%E6%A3%80%E6%A0%87%E8%AF%86 HTTP/1.1" 200 None
+Mon, 12 Aug 2019 17:35:53 log.py[line:17] DEBUG 该指标在指标库中不存在,去年同期出院患者总人次
+Mon, 12 Aug 2019 17:36:35 log.py[line:17] DEBUG 该指标在指标库中不存在,使用非限制级抗菌药物出院患者中病原学检查送检人次
+Mon, 12 Aug 2019 17:36:35 log.py[line:17] DEBUG 该指标在指标库中不存在,使用限制级抗菌药物出院患者中病原学检查送检人次
+Mon, 12 Aug 2019 17:36:35 log.py[line:17] DEBUG 该指标在指标库中不存在,使用特殊级抗菌药物出院患者中病原学检查送检人次
+Mon, 12 Aug 2019 17:36:35 log.py[line:17] DEBUG 该指标在指标库中不存在,出院患者静脉输液总人次
+Mon, 12 Aug 2019 17:36:35 log.py[line:17] DEBUG 该指标在指标库中不存在,出院患者总人次（排除中药饮片）

@@ -1,0 +1,178 @@
+Fri, 29 Mar 2019 12:22:42 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 12:22:42 log.py[line:20] ERROR (1146, "Table 'ipharmacare_bi_report_new1.report_295491404916850688_data' doesn't exist")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 66, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'ipharmacare_bi_report_new1.report_295491404916850688_data' doesn't exist")
+Fri, 29 Mar 2019 12:28:57 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 12:28:57 log.py[line:20] ERROR (1146, "Table 'ipharmacare_bi_report_new1.report_295491404916850688_data' doesn't exist")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 66, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'ipharmacare_bi_report_new1.report_295491404916850688_data' doesn't exist")
+Fri, 29 Mar 2019 15:15:35 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 15:15:35 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 72, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Fri, 29 Mar 2019 15:16:49 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 15:16:49 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Traceback (most recent call last):
+  File "C:/Users/ipharmacare/newreport\common\getReportContent.py", line 72, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Fri, 29 Mar 2019 15:17:02 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 15:17:02 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Traceback (most recent call last):
+  File "C:/Users/ipharmacare/newreport\common\getReportContent.py", line 72, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Fri, 29 Mar 2019 15:21:24 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 15:21:24 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 72, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Fri, 29 Mar 2019 15:24:24 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 15:24:24 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 72, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Fri, 29 Mar 2019 15:25:38 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 15:25:38 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 72, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(296258892281675776L,)_data' at line 1")
+Fri, 29 Mar 2019 15:26:05 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 15:26:05 log.py[line:20] ERROR (1054, "Unknown column 'statistic_value' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 72, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'statistic_value' in 'field list'")
+Fri, 29 Mar 2019 15:28:17 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 15:28:17 log.py[line:20] ERROR (1054, "Unknown column 'statistic_value' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 72, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'statistic_value' in 'field list'")
+Fri, 29 Mar 2019 17:29:18 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:29:18 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''report_296258892281675776_data'' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 78, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''report_296258892281675776_data'' at line 1")
+Fri, 29 Mar 2019 17:31:04 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:31:04 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''report_296258892281675776_data'' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 78, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''report_296258892281675776_data'' at line 1")
+Fri, 29 Mar 2019 17:31:04 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:31:04 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''report_296258892281675776_data'' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 78, in getESvalue
+    self.cur.execute(self.sql.format(reportDataName))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''report_296258892281675776_data'' at line 1")
+Fri, 29 Mar 2019 17:36:08 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:36:08 log.py[line:20] ERROR 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 122, in getReportTime
+    self.cur.execute(self.sql.format(record_id, reportDataName))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Fri, 29 Mar 2019 17:41:15 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:41:15 log.py[line:20] ERROR 'long' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 82, in getESvalue
+    es_value = [i for i in result[0]]
+TypeError: 'long' object is not iterable
+Fri, 29 Mar 2019 17:41:15 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:41:15 log.py[line:20] ERROR 'long' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 82, in getESvalue
+    es_value = [i for i in result[0]]
+TypeError: 'long' object is not iterable
+Fri, 29 Mar 2019 17:44:00 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:44:00 log.py[line:20] ERROR 'long' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 83, in getESvalue
+    es_value = [i for i in result[0]]
+TypeError: 'long' object is not iterable
+Fri, 29 Mar 2019 17:44:00 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:44:00 log.py[line:20] ERROR 'long' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 83, in getESvalue
+    es_value = [i for i in result[0]]
+TypeError: 'long' object is not iterable
+Fri, 29 Mar 2019 17:44:38 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:44:38 log.py[line:20] ERROR 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 126, in getReportTime
+    self.cur.execute(self.sql.format(record_id, reportDataName))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Fri, 29 Mar 2019 17:47:28 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:47:28 log.py[line:20] ERROR 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 125, in getReportTime
+    self.cur.execute(self.sql.format(record_id, reportDataName))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Fri, 29 Mar 2019 17:48:25 log.py[line:17] DEBUG SQL执行错误
+Fri, 29 Mar 2019 17:48:25 log.py[line:20] ERROR 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 125, in getReportTime
+    self.cur.execute(self.sql.format(record_id, reportDataName))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)

@@ -1,0 +1,416 @@
+Wed, 08 May 2019 15:21:15 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 15:21:15 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 15:30:17 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 15:30:17 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 16:03:53 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 16:03:53 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 16:12:08 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 16:12:08 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 16:21:48 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 16:21:48 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 16:21:48 log.py[line:17] DEBUG 执行过程中出错
+Wed, 08 May 2019 16:21:48 log.py[line:20] ERROR (1054, "Unknown column 'drug_name' in 'field list'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'drug_name' in 'field list'")
+Wed, 08 May 2019 16:25:15 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 16:25:15 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 16:32:30 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 16:32:30 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 17:05:02 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 17:05:02 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 17:09:12 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 17:09:12 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 17:28:32 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 17:28:32 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 17:35:00 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 17:35:00 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 17:38:51 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 17:38:51 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 17:39:30 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 17:39:30 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 17:50:00 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 17:50:00 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 17:52:32 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 17:52:32 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 19:21:03 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 19:21:03 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 19:27:31 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 19:27:31 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 19:31:16 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 19:31:16 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 19:43:24 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 19:43:24 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 19:53:11 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 19:53:11 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 20:07:11 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 20:07:11 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 20:07:11 log.py[line:17] DEBUG 执行过程中出错
+Wed, 08 May 2019 20:07:11 log.py[line:20] ERROR (1054, "Unknown column 't4.recipe_source' in 'where clause'")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 't4.recipe_source' in 'where clause'")
+Wed, 08 May 2019 20:09:13 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 20:09:13 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Wed, 08 May 2019 20:23:58 log.py[line:17] DEBUG 执行过程中出错
+Wed, 08 May 2019 20:23:58 log.py[line:20] ERROR (2013, 'Lost connection to MySQL server during query')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2013, 'Lost connection to MySQL server during query')
+Wed, 08 May 2019 20:23:58 log.py[line:17] DEBUG 执行过程中出错
+Wed, 08 May 2019 20:23:58 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Wed, 08 May 2019 20:23:58 log.py[line:17] DEBUG 执行过程中出错
+Wed, 08 May 2019 20:23:58 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Wed, 08 May 2019 20:23:58 log.py[line:17] DEBUG 执行过程中出错
+Wed, 08 May 2019 20:23:58 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 314, in getSqlValue_zone
+    sqlValue = self.getValueInZone(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 43, in getValueInZone
+    sqlValue = self.conndb.executeSQL_zoneid_one(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 49, in executeSQL_zoneid_one
+    cur.execute(sql, (zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Wed, 08 May 2019 20:23:58 log.py[line:17] DEBUG 执行过程中出错
+Wed, 08 May 2019 20:23:58 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Wed, 08 May 2019 20:23:58 log.py[line:17] DEBUG 执行过程中出错
+Wed, 08 May 2019 20:23:58 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Wed, 08 May 2019 20:23:58 log.py[line:17] DEBUG 执行过程中出错
+Wed, 08 May 2019 20:23:58 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Wed, 08 May 2019 20:23:58 log.py[line:17] DEBUG 执行过程中出错
+Wed, 08 May 2019 20:23:58 log.py[line:20] ERROR (2006, 'MySQL server has gone away')
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 319, in getSqlValue_zone
+    sqlValue = self.getValueInHospital(itemname, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemZoneValue.py", line 73, in getValueInHospital
+    sqlValue = self.conndb.executeSQL_zoneid_two(self.cur, self.sql, zoneid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 54, in executeSQL_zoneid_two
+    cur.execute(sql,(zoneid, startT, endT,zoneid, startT, endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+Wed, 08 May 2019 20:25:14 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc
+Wed, 08 May 2019 20:25:14 log.py[line:20] ERROR bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 50, in getitems
+    result=self.conf.items(field)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 655, in items
+    for option in options]
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 716, in _interpolate_some
+    "bad interpolation variable reference %r" % rest)
+InterpolationSyntaxError: bad interpolation variable reference "%(dbname_dp) s.`opt_recipe_drug` t1 INNER JOIN % (dbname_knowledge) s.`base_product` t2 ON t1.drug_id = t2.product_id INNER JOIN % (dbname_knowledge) s.`tb_product_drug` t3 ON t2.map_product_id = t3.product_id INNER JOIN % (dbname_dp) s.`opt_recipe` t4 ON t1.recipe_id = t4.recipe_id WHERE \tt1.id IN (SELECT\tSUBSTRING_INDEX(SUBSTRING_INDEX(a.item_no_set_str,',',b.help_topic_id + 1\t),',' ,- 1) AS `name`\tFROM % (dbname_dp) s.opt_alertmessage a\tLEFT JOIN mysql.help_topic b ON b.help_topic_id < (\tLENGTH(a.item_no_set_str) - LENGTH(REPLACE (a.item_no_set_str, ',', '')) + 1)\t\tWHERE\t\ta.analysis_type = '\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe5\x88\x86\xe6\x9e\x90'\tAND a.analysis_result_type = '\xe8\xb4\xa8\xe5\xad\x90\xe6\xb3\xb5\xe6\x8a\x91\xe5\x88\xb6\xe5\x89\x82'\tORDER BY\ta.id)\tAND t1.Zone_ID = %%s AND t4.recipe_source = '\xe9\x97\xa8\xe8\xaf\x8a' AND t1.key_time BETWEEN %ss AND %%s"

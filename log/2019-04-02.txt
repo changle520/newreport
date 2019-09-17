@@ -1,0 +1,251 @@
+Tue, 02 Apr 2019 09:31:52 log.py[line:17] DEBUG SQL执行错误
+Tue, 02 Apr 2019 09:31:52 log.py[line:20] ERROR 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 125, in getReportTime
+    self.cur.execute(self.sql.format(record_id, reportDataName))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Tue, 02 Apr 2019 09:37:21 log.py[line:17] DEBUG SQL执行错误
+Tue, 02 Apr 2019 09:37:21 log.py[line:20] ERROR 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 125, in getReportTime
+    self.cur.execute(self.sql.format(record_id, reportDataName))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Tue, 02 Apr 2019 09:38:58 log.py[line:17] DEBUG SQL执行错误
+Tue, 02 Apr 2019 09:38:58 log.py[line:20] ERROR 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 125, in getReportTime
+    self.cur.execute(self.sql.format(record_id, reportDataName))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Tue, 02 Apr 2019 10:26:56 log.py[line:17] DEBUG SQL执行错误
+Tue, 02 Apr 2019 10:26:56 log.py[line:20] ERROR 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 126, in getReportTime
+    self.cur.execute(self.sql.format(record_id, reportDataName))
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+Tue, 02 Apr 2019 10:40:17 log.py[line:17] DEBUG SQL执行错误
+Tue, 02 Apr 2019 10:40:17 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\getReportContent.py", line 126, in getReportTime
+    self.cur.execute(self.sql.format(record_id,))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s' at line 1")
+Tue, 02 Apr 2019 11:16:52 log.py[line:17] DEBUG 该指标在指标库中不存在,三级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 11:16:52 log.py[line:17] DEBUG 该指标在指标库中不存在,五级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 11:23:12 log.py[line:17] DEBUG 该指标在指标库中不存在,三级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 11:23:12 log.py[line:17] DEBUG 该指标在指标库中不存在,五级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 11:48:37 log.py[line:17] DEBUG 读取配置项发生了错误,reportsql,zoneid
+Tue, 02 Apr 2019 11:48:37 log.py[line:20] ERROR '%' must be followed by '%' or '(', found: '%ss'
+Traceback (most recent call last):
+  File "C:/Users/ipharmacare/newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 623, in get
+    return self._interpolate(section, option, value, d)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 732, in _interpolate_some
+    "'%%' must be followed by '%%' or '(', found: %r" % (rest,))
+InterpolationSyntaxError: '%' must be followed by '%' or '(', found: '%ss'
+Tue, 02 Apr 2019 13:42:33 log.py[line:17] DEBUG 读取配置项发生了错误,reportsql,zoneid
+Tue, 02 Apr 2019 13:42:33 log.py[line:20] ERROR '%' must be followed by '%' or '(', found: '%ss'
+Traceback (most recent call last):
+  File "C:/Users/ipharmacare/newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 623, in get
+    return self._interpolate(section, option, value, d)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 732, in _interpolate_some
+    "'%%' must be followed by '%%' or '(', found: %r" % (rest,))
+InterpolationSyntaxError: '%' must be followed by '%' or '(', found: '%ss'
+Tue, 02 Apr 2019 13:44:42 log.py[line:17] DEBUG 读取配置项发生了错误,reportsql,zoneid
+Tue, 02 Apr 2019 13:44:42 log.py[line:20] ERROR '%' must be followed by '%' or '(', found: '%ss'
+Traceback (most recent call last):
+  File "C:/Users/ipharmacare/newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 623, in get
+    return self._interpolate(section, option, value, d)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 691, in _interpolate
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 732, in _interpolate_some
+    "'%%' must be followed by '%%' or '(', found: %r" % (rest,))
+InterpolationSyntaxError: '%' must be followed by '%' or '(', found: '%ss'
+Tue, 02 Apr 2019 13:50:43 log.py[line:17] DEBUG 该指标在指标库中不存在,三级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 13:50:43 log.py[line:17] DEBUG 该指标在指标库中不存在,五级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 13:53:47 log.py[line:17] DEBUG 该指标在指标库中不存在,三级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 13:53:47 log.py[line:17] DEBUG 该指标在指标库中不存在,五级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 13:59:16 log.py[line:17] DEBUG 该指标在指标库中不存在,三级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 13:59:16 log.py[line:17] DEBUG 该指标在指标库中不存在,五级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 14:03:05 log.py[line:17] DEBUG 该指标在指标库中不存在,三级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 14:03:05 log.py[line:17] DEBUG 该指标在指标库中不存在,五级警示信息发生处方占比(%)
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 该指标在指标库中不存在,住院总收入
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 该指标在指标库中不存在,急诊总收入
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊总收入
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 该指标在指标库中不存在,医疗总收入
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 该指标在指标库中不存在,收费前药师审核处方数
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 该指标在指标库中不存在,门诊输液药物输液总量
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc,门诊输液药物输液总量
+Tue, 02 Apr 2019 14:44:44 log.py[line:20] ERROR No option '\xe9\x97\xa8\xe8\xaf\x8a\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'default_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe9\x97\xa8\xe8\xaf\x8a\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'default_doc'
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 执行过程中出错
+Tue, 02 Apr 2019 14:44:44 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 248, in getSqlValue_doc
+    sqlValue = self.getValueInCalc(itemname, zoneid,docid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 110, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid,docid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 194, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_docid_one(self.cur, self.itemOneSql, zoneid,docid,startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 109, in executeSQL_docid_one
+    cur.execute(sql, (zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 该指标在指标库中不存在,住院输液药物输液总量
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 读取配置项发生了错误,default_doc,住院输液药物输液总量
+Tue, 02 Apr 2019 14:44:44 log.py[line:20] ERROR No option '\xe4\xbd\x8f\xe9\x99\xa2\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'default_doc'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\common\configReader.py", line 27, in get
+    return self.conf.get(field,key)
+  File "C:\Users\ipharmacare\python27\lib\ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option '\xe4\xbd\x8f\xe9\x99\xa2\xe8\xbe\x93\xe6\xb6\xb2\xe8\x8d\xaf\xe7\x89\xa9\xe8\xbe\x93\xe6\xb6\xb2\xe6\x80\xbb\xe9\x87\x8f' in section: 'default_doc'
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 执行过程中出错
+Tue, 02 Apr 2019 14:44:44 log.py[line:20] ERROR unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 248, in getSqlValue_doc
+    sqlValue = self.getValueInCalc(itemname, zoneid,docid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 110, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid,docid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 194, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_docid_one(self.cur, self.itemOneSql, zoneid,docid,startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 109, in executeSQL_docid_one
+    cur.execute(sql, (zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: unsupported operand type(s) for %: 'NoneType' and 'tuple'
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 执行过程中出错
+Tue, 02 Apr 2019 14:44:44 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 367
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 238, in getSqlValue_doc
+    sqlValue = self.getValueInDoc(itemname, zoneid,docid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 40, in getValueInDoc
+    sqlValue = self.conndb.executeSQL_docid_one(self.cur, self.sql, zoneid,docid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 109, in executeSQL_docid_one
+    cur.execute(sql, (zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 367
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 执行过程中出错
+Tue, 02 Apr 2019 14:44:44 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 283
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 238, in getSqlValue_doc
+    sqlValue = self.getValueInDoc(itemname, zoneid,docid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 40, in getValueInDoc
+    sqlValue = self.conndb.executeSQL_docid_one(self.cur, self.sql, zoneid,docid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 109, in executeSQL_docid_one
+    cur.execute(sql, (zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 283
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 执行过程中出错
+Tue, 02 Apr 2019 14:44:44 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 283
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 248, in getSqlValue_doc
+    sqlValue = self.getValueInCalc(itemname, zoneid,docid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 110, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid,docid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 194, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_docid_one(self.cur, self.itemOneSql, zoneid,docid,startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 109, in executeSQL_docid_one
+    cur.execute(sql, (zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 283
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 执行过程中出错
+Tue, 02 Apr 2019 14:44:44 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'event_no,sum(price*despensing_num) as drug_money from  ipharmacare_dp354.`ipt_dr' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 238, in getSqlValue_doc
+    sqlValue = self.getValueInDoc(itemname, zoneid,docid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 40, in getValueInDoc
+    sqlValue = self.conndb.executeSQL_docid_one(self.cur, self.sql, zoneid,docid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 109, in executeSQL_docid_one
+    cur.execute(sql, (zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'event_no,sum(price*despensing_num) as drug_money from  ipharmacare_dp354.`ipt_dr' at line 1")
+Tue, 02 Apr 2019 14:44:44 log.py[line:17] DEBUG 执行过程中出错
+Tue, 02 Apr 2019 14:44:44 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 318
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 248, in getSqlValue_doc
+    sqlValue = self.getValueInCalc(itemname, zoneid,docid, startT, endT, self.optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 110, in getValueInCalc
+    self.itemvalue_one = self.getCalc_Numerator_zone(self.itemnameOne, zoneid,docid, startT, endT, optcalcminus)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 194, in getCalc_Numerator_zone
+    self.itemvalue_one = self.conndb.executeSQL_docid_one(self.cur, self.itemOneSql, zoneid,docid,startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 109, in executeSQL_docid_one
+    cur.execute(sql, (zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 318
+Tue, 02 Apr 2019 14:44:45 log.py[line:17] DEBUG 指标计算时出错
+Tue, 02 Apr 2019 14:44:45 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 475
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 84, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 114, in executeSQL_docid_two
+    cur.execute(sql, (zoneid,docid,startT,endT,zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 475
+Tue, 02 Apr 2019 14:44:45 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 02 Apr 2019 14:44:46 log.py[line:17] DEBUG 指标计算时出错
+Tue, 02 Apr 2019 14:44:46 log.py[line:20] ERROR unsupported format character ''' (0x27) at index 475
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 84, in getValueInCalcminus
+    endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 114, in executeSQL_docid_two
+    cur.execute(sql, (zoneid,docid,startT,endT,zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+ValueError: unsupported format character ''' (0x27) at index 475
+Tue, 02 Apr 2019 14:44:46 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 02 Apr 2019 14:44:46 log.py[line:17] DEBUG 执行过程中出错
+Tue, 02 Apr 2019 14:44:46 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.ipt_drug  t2 where t2.Order_Doc_ID='05019' ) and  key_time between '2014-08-01'' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 238, in getSqlValue_doc
+    sqlValue = self.getValueInDoc(itemname, zoneid,docid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 40, in getValueInDoc
+    sqlValue = self.conndb.executeSQL_docid_one(self.cur, self.sql, zoneid,docid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 109, in executeSQL_docid_one
+    cur.execute(sql, (zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.ipt_drug  t2 where t2.Order_Doc_ID='05019' ) and  key_time between '2014-08-01'' at line 1")
+Tue, 02 Apr 2019 14:54:04 log.py[line:17] DEBUG 执行过程中出错
+Tue, 02 Apr 2019 14:54:04 log.py[line:20] ERROR (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'event_no,sum(price*despensing_num) as drug_money from  ipharmacare_dp354.`ipt_dr' at line 1")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 238, in getSqlValue_doc
+    sqlValue = self.getValueInDoc(itemname, zoneid,docid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\GetSQLvalue\itemDocValue.py", line 40, in getValueInDoc
+    sqlValue = self.conndb.executeSQL_docid_one(self.cur, self.sql, zoneid,docid, startT, endT)
+  File "C:\Users\ipharmacare\newreport\common\connectDB.py", line 109, in executeSQL_docid_one
+    cur.execute(sql, (zoneid,docid,startT,endT))
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'event_no,sum(price*despensing_num) as drug_money from  ipharmacare_dp354.`ipt_dr' at line 1")
+Tue, 02 Apr 2019 14:54:08 log.py[line:17] DEBUG 计算指标不成功，有指标值为空
+Tue, 02 Apr 2019 14:54:08 log.py[line:17] DEBUG 计算指标不成功，有指标值为空

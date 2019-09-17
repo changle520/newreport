@@ -1,0 +1,20 @@
+Thu, 14 Feb 2019 10:20:08 log.py[line:18] DEBUG 数据库连接出错
+Thu, 14 Feb 2019 10:20:08 log.py[line:21] ERROR (2003, "Can't connect to MySQL server on '10.1.1.67' (10061)")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\report\common\connectDB.py", line 28, in connect
+    return MySQLdb.Connect(host=self.host,port=self.port,user=self.username,passwd=self.passwd,db=dbname,charset=self.charset)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '10.1.1.67' (10061)")
+Thu, 14 Feb 2019 10:20:56 log.py[line:18] DEBUG 数据库连接出错
+Thu, 14 Feb 2019 10:20:56 log.py[line:21] ERROR (2003, "Can't connect to MySQL server on '10.1.1.67' (10061)")
+Traceback (most recent call last):
+  File "C:\Users\ipharmacare\report\common\connectDB.py", line 28, in connect
+    return MySQLdb.Connect(host=self.host,port=self.port,user=self.username,passwd=self.passwd,db=dbname,charset=self.charset)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\ipharmacare\python27\lib\site-packages\MySQLdb\connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2003, "Can't connect to MySQL server on '10.1.1.67' (10061)")
